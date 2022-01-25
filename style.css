@@ -17,10 +17,12 @@ h1{
     font-size: 4rem;
     text-align: center;
     text-shadow: 0 .2rem 0.4rem rgba(0, 0, 0, 0.884);
-    display: flex;
-    align-items: center;
     color: rgb(206, 193, 193);
-    margin-top: 50px;
+  
+}
+.hero h2{
+    color: rgb(206, 193, 193);
+    margin-bottom: 0;
 }
 h2{
     font-size: 3rem;
@@ -29,13 +31,11 @@ h2{
     text-shadow: 0 .2rem 0.2rem rgba(0, 0, 0, 0.692);
 }
 h3{
-    font-family:cursive  ;
+    font-family: cursive;
     font-size: 2rem;
     text-align: center;
     margin-bottom: 1rem;
-    
 }
-
 
 p{
     font-size: 1.5rem;
@@ -44,76 +44,79 @@ p{
     padding: 1rem 2rem 2rem;
     width: auto;
     height: auto;
-    /* border: black solid 1px; */
+    
     box-shadow: 0 0 .8rem rgba(39, 1, 1, 0.384);
     border-radius: 1rem;
     margin: 2rem auto;
-    
 }
 
 .container_header{
     width: 100%;
-    height: 50px;
+    height: auto;
     background-color: #333;
     display: flex;
-    position:fixed;
+    position: fixed;
     right: 0;
     justify-content: space-between;
 }
 
-body > header > nav > ul{
-    display: flex;
-    margin-right: 20px;
-}
-
-nav ul li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-}
 
 
-.img_logo{
-    display: flex;
-    height: 55px
+.logo {
+    width: 20%;
+    background-color: rgb(100, 99, 99);
+    border-radius: 50%;
 }
+
 .enlaces{
-    display: flex;
-    justify-content: space-evenly ;
+    width: 100%;
 }
-.enlaces a{
-    margin: 0 1rem;
+.enlaces_lis{
+    height: 100%;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr 1fr ;
+}
+.enlaces_lis li{
+    display: flex;
+    align-items: flex-end;
+    padding: .5rem 0 ;
+}
+.enlaces_lis a{
+    
     color: rgb(247, 182, 85);
-    font-size: 2.4rem;
+    font-size: 1.2rem;
     text-decoration: none;
+    list-style: none;
+   
+    
 }
 .enlaces a:hover{
     color: rgb(212, 195, 168);
 }
 
-.logo {
-    display: flex;
-    margin-left: 20px;
+.logo img{
+    width: 100%;
 }
 
-.item{
+.hero {
+   
     display: flex;
-}
-
-body .hero {
-    background-color: rgb(88, 84, 84);
-    display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: #f1f0ee;
+   
 }
 
 .family{
-justify-content: center;
-display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
 
 .img_members{
-    margin-top: 50px;
+    width: 100%;
+    margin-top: 2rem;
+    margin-left: 3rem;
 }
 
 
