@@ -119,7 +119,9 @@ display: flex;
 
 /* /////////////////main///////////////////// */
 
-
+.relleno_fixe{
+    height: 13rem;
+}
 main{
     
     width: 100%;
@@ -144,10 +146,13 @@ p::first-letter{
     font-size: 1.8rem;
     /* font-weight: bold; */
 }
+.footer_textos p::first-letter{
+    font-size: 1.5rem;
+    /* font-weight: bold; */
+}
 .lista{
     margin: 0 1.5rem;
 }
-
 .trabajos{
     display: grid;
     justify-items: auto;
@@ -177,9 +182,12 @@ figcaption{
     font-size: 1rem;
    
 }
-.emoji_ok{
-    display: flex;
-    justify-content:flex-end ;
+.emoji_ok img{
+    /* position: relative; */
+    margin-left: 75%;
+    /* left: 1rem; */
+    /* display: flex;
+    justify-content:flex-end ; */
 }
 .emoji img{
   
@@ -232,12 +240,13 @@ footer{
 
 /* /////////////////responsive///////////////////// */
 @media (min-width: 430px){
-    h1{
-        
+    .container_header{
+        display: grid;
+        grid-template: 10rem 3rem / .3fr 20% 1fr ;
+        grid-template-areas:
+        "logo logo family"
+        "logo logo enlaces";
     }
-    
-    
-    
     .soldar{
         width: 80%;
        margin: 2rem auto;
@@ -278,12 +287,17 @@ footer{
     }
 }
 @media (min-width: 800px){
-    h1{
-        color: tomato;
+    .container_header{
+        display: grid;
+        grid-template: 13rem /1fr 1fr 1fr 1fr ;
+        grid-template-areas:
+        "logo family family enlaces";
     }
-
-
-
+    .enlaces{
+        display: flex;
+        align-items: flex-end;
+        padding: 3rem;
+    }
     .conten_global{
         max-width: 1100px;
         margin: auto;
