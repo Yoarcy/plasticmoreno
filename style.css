@@ -116,38 +116,90 @@ p{
     background-color: #bccec4;
     
 }
+/*//////////////////////////////slider/////////////////////*/
 .carrussell {
     display: grid;
-    grid-template: auto auto / 1fr ; 
+    grid-template:  auto / 1fr ; 
+}
+.container-slider{
+    width: 90%;
+    max-width: 90rem;
+    margin: auto;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.473) ;
+    border-radius: 2rem;
+    position: relative;
+}
+.slider{
+    display: flex;
+    width: 300%; /*dependiendo de la cantidad de imagenes*/
+    height: auto;
+    margin-left: -100%;
+}
+.slider__section{
+width: 100%;
+
+}
+.slider__img{
+    display: block;
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;/*es para que las imagenes no se estiren*/
+}
+.LosMorenos{
+    margin: auto;
+}
+.map{
+    margin: auto;
+}
+.frente{
+    margin: auto;
+}
+.slider__btn{
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background-color: rgba(255, 255, 255, 0.24);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.6rem;
+    font-weight: bold;
+    font-family: monospace;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.26);
+}
+.slider__btn:active{
+    background-color: white;
+    color: black;
+}
+.slider__btn--left{
+   left: 1rem;
 }
 
-.family{
+.slider__btn--right{
+    right: 1rem;
+}
+
+/* .family{
     width: 100%;
     max-width: 450px;
     align-self: center;
     justify-self: center;
-    /* display: grid;
-    grid-template: auto / 1fr ;  */
-    /* padding: auto 1rem; */
-    /* display: flex;
-    justify-content: center; */
-    
-    /* margin: auto; */
+   
 }
 
 .img_members{
     width: 100%;
     margin: auto;
     align-self: center;
-    /* margin-left: 3rem; */
-}
+    
+} */
 
 
 /* /////////////////main///////////////////// */
-/* .conten_global{
-    position: relative;
-    top: -.2rem;
-} */
+
 .relleno_fixe{
     height: 13rem;
 }
@@ -173,11 +225,11 @@ main{
 }
 p::first-letter{
     font-size: 1.8rem;
-    /* font-weight: bold; */
+    
 }
 .footer_textos p::first-letter{
     font-size: 1.5rem;
-    /* font-weight: bold; */
+   
 }
 .lista{
     margin: 0 1.5rem;
@@ -194,7 +246,7 @@ p::first-letter{
     width: 80%;
     border-radius: 10px;
     margin: 2rem auto .2rem;
-    /* display: inline-block; */
+    
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.884);
 }
 figcaption{
@@ -212,11 +264,9 @@ figcaption{
    
 }
 .emoji_ok img{
-    /* position: relative; */
+    
     margin-left: 75%;
-    /* left: 1rem; */
-    /* display: flex;
-    justify-content:flex-end ; */
+  
 }
 .emoji img{
   
@@ -285,6 +335,7 @@ footer{
     .logo {
         margin: 0 2rem;
         width: 15.5%;
+       
     }
     .hero {
         display: grid;
@@ -384,5 +435,36 @@ footer{
     .emoji_asombrado img{
         width: 50%;
         align-items:  center;
+    }
+}
+@media (min-width: 1100px){
+
+h1{
+    font-size: 6rem;
+
+}
+.hero h2{
+    font-size: 4rem;
+   
+}}
+@media (min-width: 1440px){
+
+    h1{
+        font-size: 8rem;
+    
+    }
+    .hero h2{
+        font-size: 6rem;
+       
+    }
+    .logo {
+        width: 30% ;
+        max-width: 200px;
+       
+    }
+    .hero{
+        padding:  15rem 1rem 1rem;
+      
+        
     }
 }

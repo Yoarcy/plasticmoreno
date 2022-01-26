@@ -42,9 +42,25 @@
 
         <div class="hero">
             <div class="carrussell">
-                <figure class="family">
-                    <img class=" img_members" src="./img/slider/LosMorenos.webp" alt="familia">
-                </figure>
+                <section class="container-slider">
+                    <div class="slider" id="slider">
+
+                        <div class="slider__section LosMorenos">
+                            <img src="./img/slider/LosMorenos.webp" alt="" class="slider__img">
+                        </div>
+                        
+                        <div class="slider__section frente">
+                            <img src="./img/slider/frente.webp" alt="" class="slider__img">
+                        </div>
+                        
+                        <div class="slider__section map">
+                            <img src="./img/slider/map.webp" alt="" class="slider__img">
+                        </div>
+
+                    </div>
+                    <div class="slider__btn slider__btn--right"  id="btn-right">&#62</div>
+                    <div class="slider__btn slider__btn--left" id="btn-left">&#60</div>
+                </section>
             </div>
             <div class="title">
                 <h1>"Los Moreno"</h1>
@@ -269,5 +285,6 @@
                 </div>   
             </footer>
         </div>
+        <script src="./slider.js"></script>
 </body>
 </html>
