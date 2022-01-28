@@ -95,7 +95,7 @@ p{
 }
 .enlaces_lis li{
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     padding: .5rem 0 ;
 }
 .enlaces_lis a{
@@ -113,7 +113,7 @@ p{
 
 .hero{
     padding:  6rem 1rem 1rem;
-    background-color: #bccec4;
+    background-color: rgb(126, 125, 125);
     
 }
 /*//////////////////////////////slider/////////////////////*/
